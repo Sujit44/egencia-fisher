@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8" />
+	<title data-text="title">You&#39;ve been Phished!</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+	<style type="text/css">.cf:after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main {
+        display: block;
+    }
+
+    body {
+        line-height: 1;
+    }
+
+    ol,ul {
+        list-style: none;
+    }
+
+    blockquote,q {
+        quotes: none;
+    }
+
+    blockquote:before,blockquote:after,q:before,q:after {
+        content: '';
+        content: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a,span {
+        display: inline-block;
+    }
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .cf:after {
+        content: " ";
+        clear: both;
+        display: block;
+    }
+
+    .cf:after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #eeeeec;
+        font-family: "Open Sans",sans-serif;
+        font-size: 18px;
+        font-size: 1.125rem;
+    }
+
+    p {
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+
+    .wrap {
+        margin: 0 auto;
+        padding: 0 10px;
+        max-width: 960px;
+    }
+
+    @-webkit-keyframes flop {
+        from {
+            background-position: left 0;
+        }
+
+        to {
+            background-position: left -295px;
+        }
+    }
+
+    @-o-keyframes flop {
+        from {
+            background-position: left 0;
+        }
+
+        to {
+            background-position: left -295px;
+        }
+    }
+
+    @keyframes flop {
+        from {
+            background-position: left 0;
+        }
+
+        to {
+            background-position: left -295px;
+        }
+    }
+
+    @-webkit-keyframes float {
+        from {
+            -webkit-transform: translate(-10px, 0);
+        }
+
+        to {
+            -webkit-transform: translate(10px, 0);
+        }
+    }
+
+    @-o-keyframes float {
+        from {
+            -o-transform: translate(-10px, 0);
+        }
+
+        to {
+            -o-transform: translate(10px, 0);
+        }
+    }
+
+    @keyframes float {
+        from {
+            transform: translate(-10px, 0);
+        }
+
+        to {
+            transform: translate(10px, 0);
+        }
+    }
+
+    @-webkit-keyframes float2 {
+        from {
+            -webkit-transform: translate(10px, 5px);
+        }
+
+        to {
+            -webkit-transform: translate(10px, -5px);
+        }
+    }
+
+    @-o-keyframes float2 {
+        from {
+            -o-transform: translate(10px, 5px);
+        }
+
+        to {
+            -o-transform: translate(10px, -5px);
+        }
+    }
+
+    @keyframes float2 {
+        from {
+            transform: translate(10px, 5px);
+        }
+
+        to {
+            transform: translate(10px, -5px);
+        }
+    }
+
+    @-webkit-keyframes float3 {
+        0% {
+            -webkit-transform: translate(-10px, -5px);
+        }
+
+        50% {
+            -webkit-transform: translate(0, 10px);
+        }
+
+        100% {
+            -webkit-transform: translate(10px, 5px);
+        }
+    }
+
+    @-o-keyframes float3 {
+        0% {
+            -o-transform: translate(-10px, -5px);
+        }
+
+        50% {
+            -o-transform: translate(0, 10px);
+        }
+
+        100% {
+            -o-transform: translate(10px, 5px);
+        }
+    }
+
+    @keyframes float3 {
+        0% {
+            transform: translate(-10px, -5px);
+        }
+
+        50% {
+            transform: translate(0, 10px);
+        }
+
+        100% {
+            transform: translate(10px, 5px);
+        }
+    }
+
+    header {
+        background: url(https://ts-eu-uploads.s3.amazonaws.com/training/production/13387/smithsstarfield-267786.jpg);
+        color: #e9d558;
+        padding: 50px 0;
+        position: relative;
+        text-shadow: 1px 1px 1px #0a6165;
+    }
+
+    header .top {
+        margin: 0 auto 30px;
+        max-width: 685px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+    }
+
+    @media all and (max-width: 640px) {
+        header .fish {
+            float: none;
+            margin: 0 auto;
+        }
+    }
+
+    header h1 {
+        color: #fff;
+        float: right;
+        font-size: 36px;
+        font-size: 2.25rem;
+        margin-bottom: 36px;
+        max-width: 430px;
+    }
+
+    @media all and (max-width: 640px) {
+        header h1 {
+            float: none;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    header h1 span:first-child {
+        color: #e9d558;
+        display: block;
+        font-size: 91px;
+        font-size: 5.6875rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    header h1 strong {
+        color: #ffab07;
+    }
+
+    header p:last-child {
+        clear: both;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    header .bubble,header .bubble:after {
+        background: rgba(255,255,255,0.2);
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        display: block;
+        height: 80px;
+        position: absolute;
+        width: 80px;
+    }
+
+    header .bubble:after {
+        background: rgba(255,255,255,0.1);
+        content: "";
+        height: 30px;
+        width: 30px;
+        right: 10px;
+        top: 10px;
+    }
+
+    header .bubble:first-of-type {
+        -webkit-animation: float 1.5s infinite alternate;
+        animation: float 1.5s infinite alternate;
+        height: 60px;
+        width: 60px;
+    }
+
+    header .bubble:nth-of-type(2) {
+        -webkit-animation: float2 1.3s infinite alternate;
+        animation: float2 1.3s infinite alternate;
+    }
+
+    header .bubble:last-of-type {
+        -webkit-animation: float3 3s infinite alternate;
+        animation: float3 3s infinite alternate;
+        height: 90px;
+        width: 90px;
+    }
+
+    .mail {
+        background: #434d53 url(https://d25q7gseii1o1q.cloudfront.net/training/fish/mail.png);
+        border-bottom: 20px solid #0d7f85;
+        border-top: 20px solid #0d7f85;
+        color: #fff;
+        overflow: hidden;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .mail p {
+        color: #e9d558;
+        float: right;
+        text-align: right;
+        width: 40%;
+    }
+
+    .mail p:first-child {
+        color: #fff;
+        float: left;
+        text-align: left;
+    }
+
+    .mail p:not(:last-child) {
+        padding: 10px 0;
+    }
+
+    @media all and (max-width: 480px) {
+        .mail p {
+            float: none !important;
+            margin: 0 auto 10px !important;
+            text-align: center;
+            width: 80%;
+        }
+    }
+
+    .mail p:last-child {
+        color: #ffab07;
+        float: none;
+        font-size: 16px;
+        font-size: 1rem;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    .mail .screeny {
+        clear: both;
+        display: inline-block;
+        margin-bottom: 30px;
+        position: relative;
+        max-width: 100%;
+    }
+
+    .mail .screeny img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .mail .screeny .link {
+        background: url(https://d25q7gseii1o1q.cloudfront.net/training/fish/pixel.gif);
+        border: 1px solid #ffab07;
+        -webkit-box-shadow: 0 0 2px #ffab07;
+        box-shadow: 0 0 2px #ffab07;
+        display: block;
+        position: absolute;
+        left: 3%;
+        top: 69%;
+        height: 4%;
+        width: 42%;
+        z-index: 1;
+    }
+
+    .mail .screeny .link span {
+        background-color: #e6e8f0;
+        background-image: -webkit-linear-gradient(#fefefe, #e6e8f0);
+        background-image: -o-linear-gradient(#fefefe, #e6e8f0);
+        background-image: linear-gradient(#fefefe, #e6e8f0);
+        border: 1px solid #666;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        color: #444;
+        font-size: 12px;
+        font-size: 0.75rem;
+        line-height: 140%;
+        opacity: 0;
+        padding: 3px;
+        position: absolute;
+        top: -200%;
+        text-align: left;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        min-width: 240px;
+    }
+
+    .mail .screeny .link:hover span {
+        opacity: 1;
+    }
+
+    footer {
+        background: #eeeeec;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    footer button {
+        background: #72ad75;
+        border: 0 none;
+        color: #fff;
+        cursor: pointer;
+        font-family: "Open Sans",sans-serif;
+        font-weight: bold;
+        line-height: 40px;
+        padding: 0 38px;
+        text-transform: uppercase;
+    }
+
+    footer button:hover {
+        background: #82b685;
+    }
+
+    footer button:active {
+        background: #62a465;
+    }
+	</style>
+	<meta content="width=device-width, initial-scale=1" name="viewport" /><!--[if lt IE 9]>
+    <style type="text/css">
+      header .fish { background: url(https://d25q7gseii1o1q.cloudfront.net/training/fish/fish.gif) no-repeat }
+      header .bubble { background: url(https://d25q7gseii1o1q.cloudfront.net/training/fish/bubble2.gif) no-repeat }
+      header .bubble:first-of-type { background: url(https://d25q7gseii1o1q.cloudfront.net/training/fish/bubble1.gif) no-repeat }
+      header .bubble:last-of-type { background: url(https://d25q7gseii1o1q.cloudfront.net/training/fish/bubble3.gif) no-repeat }
+
+      .mail .screeny .link { *left: 18%; *width: 29%; }
+    </style>
+    <script src="https://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <![endif]--><script type="text/javascript">
+  window.training_page = 'fish';
+  </script>
+            <script>
+              window.training_page = "custom";
+            </script>
+            <script type="text/javascript" src="/assets/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            <script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/plugin_detect.js?guid=test_942cccdfb4&correlation_id=0e91db45-bfa2-434d-804d-7f746c630e72"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/java.js?guid=test_942cccdfb4&correlation_id=0e91db45-bfa2-434d-804d-7f746c630e72"></script>
+<script type="text/javascript" src="https://java.com/js/deployJava.js"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/flash.js?guid=test_942cccdfb4&correlation_id=0e91db45-bfa2-434d-804d-7f746c630e72"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/pdf.js?guid=test_942cccdfb4&correlation_id=0e91db45-bfa2-434d-804d-7f746c630e72"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/quicktime.js?guid=test_942cccdfb4&correlation_id=0e91db45-bfa2-434d-804d-7f746c630e72"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/realplayer.js?guid=test_942cccdfb4&correlation_id=0e91db45-bfa2-434d-804d-7f746c630e72"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/silverlight.js?guid=test_942cccdfb4&correlation_id=0e91db45-bfa2-434d-804d-7f746c630e72"></script>
+<script type="text/javascript" src="https://tslp.s3.amazonaws.com/detect/wmp.js?guid=test_942cccdfb4&correlation_id=0e91db45-bfa2-434d-804d-7f746c630e72"></script>
+            <script type="text/javascript">
+              window.plugin_detector          = PluginDetect;
+              window.account_logo             = "";
+              window.campaign_guid            = "test_942cccdfb4";
+              window.company_name             = "Smiths Group";
+              window.company_name_possessive  = "Smiths Group's";
+              window.content_bucket           = "https://ts-content-eu.s3-eu-west-1.amazonaws.com/";
+              window.correlation_id           = "0e91db45-bfa2-434d-804d-7f746c630e72";
+              window.environment              = "production";
+              window.from_email_address       = "Amazon (amazon.noreply@amazoon.site)";
+              window.subject_line             = "$25 on Amazon.com";
+              window.target_guid              = "test_942cccdfb4";
+              window.template                 = "custom";
+              </script>
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top">
+<div class="fish">
+<div style="text-align:center"><img alt="" height="65" src="https://ts-eu-uploads.s3.amazonaws.com/training/production/13387/smiths-logo-blue-no-tagline-e28e15.png" width="350" /></div>
+</div>
+
+<div style="text-align: center;"><br />
+<span style="font-size:26px;">You&#39;ve been&nbsp;phished!&nbsp;</span><span style="font-size: 26px; background-color: initial; display: inline !important;">Don&#39;t worry, this was an approved phishing simulation run by BIS Cyber Security</span></div>
+</div>
+</div>
+</header>
+
+<section class="mail">
+<div class="wrap">
+<p data-text="p1">Below is the simulated phishing message you just received. Like a real phishing attack, on the surface, the email seems to be legitimate&nbsp;&mdash; but it isn&#39;t.&nbsp;</p>
+
+<p data-text="p2">If this had been an actual attack, clicking the link could have sent you to a dangerous site and potentially exposed your credentials and/or system to ransomware, malware or another cyber security threat.</p>
+
+<div class="screeny"><img alt="" height="879" src="https://ts-eu-uploads.s3.amazonaws.com/training/production/13387/amazoon-site-d649bb.jpg" width="674" /></div>
+
+<p data-text="p3" dir="ltr" style="float: none;text-align: center;width: 100%;color: white;">When you receive an unsolicited email with embedded web links, keep the following tips in mind:</p>
+
+<div style="text-align: left;"><strong class="ms-rteFontSize-3"><strong><strong>Clues to look out for</strong></strong></strong><br />
+&nbsp;</div>
+
+<div style="text-align: left;">
+<ul style="margin-left: 40px;">
+	<li><strong class="ms-rteFontSize-3"><strong><strong>Double check the links</strong></strong></strong></li>
+	<li>Be wary of fake URLs and login pages that look like the real deal. Sometimes they even use URL shortening services to hide their true identity. But don&rsquo;t worry, you can outsmart them by hovering over each link to see its true source. In this particular email, the link is [hxxps://amazoon.site], which appears unusual as it does not match the correct spelling of Amazon. If you noticed, there is an &#39;o&#39; present when it should not be.&nbsp;Always double-check the links before clicking on them to avoid falling prey to phishing scams.</li>
+	<li>&nbsp;</li>
+</ul>
+
+<div style="margin-left: 40px;"><strong>Name of sender can trick you</strong><br />
+Even if the email seems to originate from a trusted source, never skip the essential step of double-checking. As you go through this email, observe the name &#39;Amazon&#39; &ndash; it might seem legitimate at first glance. However, upon closer inspection, the domain &#39;<!--StartFragment -->amazoon.site<!--EndFragment -->&#39; raises suspicion with its intentional misspelling, echoing the same mistake found in the renowned Amazon. Stay vigilant to safeguard against such clever ploys!</div>
+<br />
+<br />
+<strong class="ms-rteFontSize-3"><strong><strong>General Tips</strong></strong></strong><br />
+&nbsp;
+<div style="margin-left: 40px;">
+<ul>
+	<li style="text-align: left;"><span class="ms-rteFontSize-3"><strong>Within emails, check for the &quot;EXTERNAL&quot; warning</strong></span></li>
+	<li style="text-align: left;"><span class="ms-rteFontSize-3">If the email subject line displays &quot;EXTERNAL,&quot; the email has been received from an external address and is NOT from an internal colleague.&nbsp; Apply extreme caution and verify all attachments and links BEFORE clicking.</span></li>
+</ul>
+<br />
+<strong class="ms-rteFontSize-3"><strong><strong>Urgency</strong></strong></strong><br />
+Be immediately suspicious if the message tries to scare you, asks for financial or tax information, or prompts you to reset a password or update an account.<br />
+&nbsp;</div>
+</div>
+
+<ul>
+	<li style="text-align: left;">
+	<div style="margin-left: 40px;"><span class="ms-rteFontSize-3"><strong>Be careful of sensitive information </strong></span></div>
+	</li>
+	<li style="text-align: left;">
+	<div style="margin-left: 40px;">Remind yourself that legitimate organisations are highly unlikely to request sensitive data via email.</div>
+	</li>
+</ul>
+
+<div style="text-align: left; margin-left: 40px;"><br />
+<strong class="ms-rteFontSize-3"><strong><strong><strong>Double check the origin before responding or clicking</strong></strong></strong></strong><br />
+Verify claims and offers via a trusted website or known phone number.<br />
+<br />
+<strong>Unsure and in doubt</strong><br />
+Do not hesitiate to reach out to the security team for advice by clicking the &lsquo;Report Suspect Email&rsquo; button in the top menu bar of Outlook or by forwarding the email to phishingalert@smiths.com.&nbsp;For more information, refer to&nbsp;<span style="color:#ffffff;"> </span><strong><a href="https://smithsonline.sharepoint.com/sites/BIS-Portal/Security/SitePages/PhishingAwareness.aspx"><span style="color:#ffffff;">BIS Phishing Awareness</span></a></strong>.</div>
+
+<blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;">
+<blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;">&nbsp;</blockquote>
+</blockquote>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<p data-text="p4">By clicking &quot;Acknowledge&quot; below you agree that you have read the above.</p>
+
+<form action="/training/acceptance" id="training-form" method="post"><button data-text="ack" type="submit">Acknowledge</button></form>
+
+<p style="font-size: 80%; margin-bottom: 0; margin-top: 20px;">This is a phishing simulation provided by Smiths Cyber Security team and is a genuine website, so you should feel safe interacting with the message. Should you have any questions or queries, please contact the <a href="mailto:servicedesk@smiths.com">Global Service Desk</a>. Confidential and Proprietary - <a href="https://www.wombatsecurity.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+</div>
+</footer>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script src="//tslp.s3.amazonaws.com/assets/js/training.js"></script></body>
+<script src="/assets/all.js?guid=test_942cccdfb4&correlation_id=0e91db45-bfa2-434d-804d-7f746c630e72"></script></html>
